@@ -2,12 +2,14 @@
 using Dados;
 using Util;
 
+
 namespace Terminal
 {
     class Program
     {
         static void Main(string[] args)
         {
+            /* 
             //Cria um objeto do tipo Validação da Biblioteca Util
             Validacao validacao = new Validacao();
 
@@ -16,7 +18,7 @@ namespace Terminal
             string cpf = "";
 
             //Cumprimenta a pessoa
-            Console.WriteLine("Caro Cliente, seja bem-vindo.");
+            Console.WriteLine("Bem-vindo ao Internet Banking.");
 
             do{
                 //Pede o cpf para o usuário
@@ -53,6 +55,35 @@ namespace Terminal
             
             //Mostra o saldo da conta
             Console.WriteLine("Seu Saldo atual é de: "+ conta.Saldo);
+            */
+            
+            ContaPessoaFisica contapf = new ContaPessoaFisica();
+            //Saca o valor da conta
+            contapf.Sacar(50.00);
+
+            //Mostra o saldo da conta
+            Console.WriteLine("Seu Saldo atual é de: "+ contapf.Saldo);
+
+            //Deposita o valor na conta
+            contapf.Depositar(100.00);
+
+            //Mostra o saldo da conta
+            Console.WriteLine("Seu Saldo atual é de: "+ contapf.Saldo);
+
+            ContaPessoaJuridica contapj = new ContaPessoaJuridica();
+            //Saca o valor da conta
+            contapj.Sacar(50.00);
+
+            //Mostra o saldo da conta
+            Console.WriteLine("Seu Saldo atual é de: "+ contapj.Saldo);
+
+            //Deposita o valor na conta
+            contapj.Depositar(100.00);
+
+            //Mostra o saldo da conta
+            Console.WriteLine("Seu Saldo atual é de: "+ contapj.Saldo);
+
+
 
         }
     }
