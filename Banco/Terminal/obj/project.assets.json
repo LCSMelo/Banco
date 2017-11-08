@@ -200,6 +200,9 @@
       "Dados/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Util": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Dados.dll": {}
         },
@@ -679,8 +682,8 @@
     },
     "Dados/1.0.0": {
       "type": "project",
-      "path": "c:\\Users\\39694603870\\Desktop\\Projetos\\Banco\\Dados\\Dados.csproj",
-      "msbuildProject": "c:\\Users\\39694603870\\Desktop\\Projetos\\Banco\\Dados\\Dados.csproj"
+      "path": "../Dados/Dados.csproj",
+      "msbuildProject": "../Dados/Dados.csproj"
     },
     "Util/1.0.0": {
       "type": "project",
@@ -723,8 +726,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "c:\\Users\\39694603870\\Desktop\\Projetos\\Banco\\Dados\\Dados.csproj": {
-              "projectPath": "c:\\Users\\39694603870\\Desktop\\Projetos\\Banco\\Dados\\Dados.csproj"
+            "C:\\Users\\39694603870\\Desktop\\Projetos\\Banco\\Dados\\Dados.csproj": {
+              "projectPath": "C:\\Users\\39694603870\\Desktop\\Projetos\\Banco\\Dados\\Dados.csproj"
             },
             "c:\\Users\\39694603870\\Desktop\\Projetos\\Banco\\Util\\Util.csproj": {
               "projectPath": "c:\\Users\\39694603870\\Desktop\\Projetos\\Banco\\Util\\Util.csproj"

@@ -6,3 +6,5 @@ c:\Users\39694603870\Desktop\Projetos\Banco\Dados\obj\Debug\netstandard2.0\Dados
 c:\Users\39694603870\Desktop\Projetos\Banco\Dados\obj\Debug\netstandard2.0\Dados.AssemblyInfo.cs
 c:\Users\39694603870\Desktop\Projetos\Banco\Dados\obj\Debug\netstandard2.0\Dados.dll
 c:\Users\39694603870\Desktop\Projetos\Banco\Dados\obj\Debug\netstandard2.0\Dados.pdb
+C:\Users\39694603870\Desktop\Projetos\Banco\Dados\bin\Debug\netstandard2.0\Util.dll
+C:\Users\39694603870\Desktop\Projetos\Banco\Dados\bin\Debug\netstandard2.0\Util.pdb

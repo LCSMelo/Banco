@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="c:\Users\39694603870\Desktop\Projetos\Banco\Dados\Dados.csproj" />
+    <ProjectReference Include="C:\Users\39694603870\Desktop\Projetos\Banco\Dados\Dados.csproj" />
     <ProjectReference Include="c:\Users\39694603870\Desktop\Projetos\Banco\Util\Util.csproj" />
   </ItemGroup>
 

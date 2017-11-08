@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Dados;
 using Util;
 
@@ -9,82 +10,47 @@ namespace Terminal
     {
         static void Main(string[] args)
         {
-            /* 
+            
             //Cria um objeto do tipo Validação da Biblioteca Util
             Validacao validacao = new Validacao();
 
-            //Declaração de variáveis
-            bool cpfvalido = false;
-            string cpf = "";
-
             //Cumprimenta a pessoa
             Console.WriteLine("Bem-vindo ao Internet Banking.");
+            Console.WriteLine("Selecione uma opção:");
 
+            string opcao = "";
+
+            //Menu principal
             do{
-                //Pede o cpf para o usuário
-                Console.Write("Informe seu CPF: ");
-                // Recebe o cpf do usuário
-                cpf = Console.ReadLine();
+                Console.WriteLine("1 - Cadastrar cliente.");
+                Console.WriteLine("2 - Sacar.");
+                Console.WriteLine("3 - Depositar.");
+                Console.WriteLine("4 - Saldo.");
+                Console.WriteLine("9 - Sair.");
 
-                // Recebe o retorno do método Validar CPF
-                cpfvalido = validacao.ValidarCPF(cpf);
+                opcao = Console.ReadLine();
+                            
+                switch(opcao)
+                {
+                    case "1":
+                    {
+                        CadastrarConta();
+                        break;
+                    }
                 
-                //Caso seja um cpf inválido o usuário será informado
-                if(cpfvalido == false){
-                    Console.WriteLine("CPF inválido");
                 }
-            } 
-
-            while (cpfvalido == false);//Faça enquanto o cpf inválido
+            }while (true);
+            {
                 
-                Console.WriteLine("Cpf válido.");
-            
-
-          
-            //Cria o objeto do tipo Conta e instancia
-            Conta conta = new Conta();
-            
-            //Deposita o valor na conta
-            conta.Depositar(250.00);
-
-            //Mostra o saldo da conta
-            Console.WriteLine("Seu Saldo atual é de: "+ conta.Saldo);
-
-            //Saca o valor da conta
-            conta.Sacar(150.00);
-            
-            //Mostra o saldo da conta
-            Console.WriteLine("Seu Saldo atual é de: "+ conta.Saldo);
-            */
-            
-            ContaPessoaFisica contapf = new ContaPessoaFisica();
-            //Saca o valor da conta
-            contapf.Sacar(50.00);
-
-            //Mostra o saldo da conta
-            Console.WriteLine("Seu Saldo atual é de: "+ contapf.Saldo);
-
-            //Deposita o valor na conta
-            contapf.Depositar(100.00);
-
-            //Mostra o saldo da conta
-            Console.WriteLine("Seu Saldo atual é de: "+ contapf.Saldo);
-
-            ContaPessoaJuridica contapj = new ContaPessoaJuridica();
-            //Saca o valor da conta
-            contapj.Sacar(50.00);
-
-            //Mostra o saldo da conta
-            Console.WriteLine("Seu Saldo atual é de: "+ contapj.Saldo);
-
-            //Deposita o valor na conta
-            contapj.Depositar(100.00);
-
-            //Mostra o saldo da conta
-            Console.WriteLine("Seu Saldo atual é de: "+ contapj.Saldo);
-
-
-
+            }
+        
         }
+                          
+        static void CadastrarConta(){
+            
+           
+        } 
+        
     }
 }
+

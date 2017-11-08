@@ -16,6 +16,9 @@
         }
       },
       "Dados/1.0.0": {
+        "dependencies": {
+          "Util": "1.0.0"
+        },
         "runtime": {
           "Dados.dll": {}
         }
